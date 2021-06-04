@@ -10,8 +10,37 @@ nano69 = car(34,342,"fsef","sfse")
 nano69.milage
 #output --> 34
 
- 
+
+
+
+
+
+
 #Ex 2-->
+class test:
+    def __init__(self, a , b , c , d):
+        self.a = a
+        self.b = b
+        self.c = c
+        self.d = d
+    def test_custom(self, v):
+        return v - self.a
+    
+    def __str__(self):
+        return "this is my test code for abstraction"
+o = test(4,5,6,7)
+o.test_custom(7)
+#output --> 3
+print(o)
+#output--> this is my test code for abstraction
+
+
+
+
+
+
+ 
+#Ex 3-->
 
 class student:
 
