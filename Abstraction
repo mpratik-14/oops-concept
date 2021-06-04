@@ -1,0 +1,69 @@
+#python code
+#Abstraction
+class car:
+    def __init__(a, m , y, ma, mo):
+        a.milage = m
+        a.year = y
+        a.make = ma
+        a.model = mo
+nano69 = car(34,342,"fsef","sfse")
+nano69.milage
+#output --> 34
+
+ 
+#Ex 2-->
+
+class student:
+
+    def __init__(self, name, rollno, joining_date, current_topic):
+
+        self.name = name
+
+        self.rollno = rollno
+
+        self.joining_date = joining_date
+
+        self.current_topic = current_topic
+
+    
+
+    def crt_topic(self):
+
+        print("current topic discussed in my class is", self.current_topic)
+
+        
+
+    def str_rollno(self):
+
+        if self.rollno == str:
+
+            print("do nothing")
+
+        else:
+
+            return str(self.rollno)
+
+    
+ 
+   def duration(self,current_date):
+
+        print("duration of student in my class is",current_date - self.joining_date)
+
+        
+
+    def __str__(self):
+
+        
+
+        return "this is student class where they can try to input data and they can fetch it"
+
+x = student("pratik",231,2021,"oops")
+
+x.duration(2021)
+#output -->  duration of student in my class is 0
+
+x.str_rollno()
+#output-->  '231'
+
+print(x)
+#output-->  this is student class where they can try to input data and they can fetch i
