@@ -6,7 +6,26 @@ With inheritance, we can reuse the fields and methods of the existing class
 
 
 #python code for inheritance
-#Eg: 1
+
+#Eg 1-->
+
+class parent:
+    
+    a = 10
+    b = 40
+    def __init__(self, parent_a, parent_b):
+        self.parent_a = parent_a
+        self.parent_b = parent_b
+
+class child():
+    print(parent.a)
+#output-->
+10
+
+
+
+
+#Eg: 2
 class test:
     def a(self):
         print("test class")
@@ -29,7 +48,13 @@ test2 class
 test class
 
 
-#Eg 2-->
+
+
+
+
+
+
+#Eg 3-->
 
 class OS:
     multi_task = True
