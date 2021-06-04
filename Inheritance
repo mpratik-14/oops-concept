@@ -1,1 +1,51 @@
+Inheritance is a mechanism in which one class acquires the property of another class. 
+For example, a child inherits the traits of his/her parents.
+With inheritance, we can reuse the fields and methods of the existing class
 
+
+
+
+#python code for inheritance
+#Eg: 1
+class test:
+    def a(self):
+        print("test class")
+class test1:
+    def a(self):
+        print("test1 class")
+class test2(test, test1):
+    t1 = test()
+    t1.a = ()
+    t2 = test1()
+    t2.a()
+    print("test2 class")
+
+t = test2()
+t.a()
+
+#output-->  
+test1 class
+test2 class
+test class
+
+
+#Eg 2-->
+
+class OS:
+    multi_task = True
+    os_name = 'Windows OS'
+    name = "pratik"
+ 
+ 
+class windows(OS):
+    def __init__(self):
+        if self.multi_task is True:
+            print('multi_task')
+        print('Name: {}'.format(self.name))
+ 
+ 
+windows = windows()
+
+#output-->
+multi_task
+Name: pratik
